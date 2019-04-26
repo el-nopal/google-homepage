@@ -3,14 +3,32 @@
   box-sizing: border-box;
 }
 
+body{
+  text-align: center;
+}
+
 img {
-  width: 400px;
+  width: 750px;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 main {
   text-align: center;
 }
 
+input {
+  width: 590px;
+  height: 50px;
+}
 ul {
-  
+  list-style: none;
+}
+
+footer {
+  background-color: #f2f2f2;
 }
