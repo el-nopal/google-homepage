@@ -16,6 +16,19 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+}
+
 /* ====== NAVIGATION ====== */
 .top-right {
   display: flex;
@@ -37,7 +50,6 @@ ul {
   border-style: solid;
   border-radius: 4px;
   padding: 10px 15px;
-  /* width: 70px; */
 }
 
 /* ====== MAIN ====== */
@@ -54,6 +66,14 @@ input {
   border: 2px solid #e3e3e4;
 }
 
+input:hover {
+  box-shadow: 0 0 6px #e3e3e4;
+}
+
+input:focus {
+  box-shadow: 0 0 6px #e3e3e4;
+}
+
 button {
   background-color: #f3f3f3;
   color: #5f6368;
@@ -63,14 +83,16 @@ button {
   border-radius: 4px;
 }
 
-
 /* ====== FOOTER ====== */
+hr {
+  margin: 0;
+  color: #e4e4e4;
+}
+
 footer {
+  font-size: .8rem;
   background-color: #f2f2f2;
   color: #716b6c;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
   position: fixed;
   left: 0;
@@ -88,10 +110,20 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding: 0 1rem;
+}
+
+.bottom-left li {
+  margin: auto .5rem;
 }
 
 .bottom-right {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  padding: 0 1rem;
+}
+
+.bottom-right li {
+  margin: auto .5rem;
 }
